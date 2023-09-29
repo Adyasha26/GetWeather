@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/web.css">
+    <link href="" rel="stylesheet">
+    <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+   
+    <div class="top-container"></div>
+      <div class="middle-container">
+             <div class="container">
+            
+              <div class="card">
+                 <div class="front">
+                
+                <h1 class="welcome">Welcome!</h1>
+                
+                 
+                <div class="weather">
+                  <h1 class="city">Mumbai</h1>
+                <img class="w_image" src="images/clouds.png" alt="weather_image">
+                
+                </div>
+               
+             </div>
+                <div class="back">
+                <input  type="text" placeholder="Enter City" class="search_bar">
+                <button id="Submit" class="Submit"> Submit </button>
+                <h2 class="city1">Mumbai</h2>
+            </div>
+            </div>
+            
+          
+          
+         </div>
+         <div class="details">
+          <div class="humidity">
+            <div class="hum_front">
+              <img src="images/humidity.png" alt="">
+            </div>
+            <div class="hum_back">
+              <h2>Humidity</h2>
+                <h2><span class="humidity_data">90%</span></h2>
+            </div>
+          </div>
+          <div class="temp">
+            <div class="temp_front">Temperature</div>
+            <div class="temp_back">
+             
+             <h3>Temperature:<span class="temp_data">22°C</span></h3>
+             <p>Max Temp: <span class="max_temp">22°C</span> </p>
+             <p>Min Temp: <span class="min_temp" >22°C</span><p>
+           
+          </div>
+          </div>
+          <div class="wind">
+            <div class="w_front">
+            <img src="images/wind.png" alt=""></div>
+            <div class="w_back">
+
+             <h2>Wind Speed</h2>
+            <h2><span class="wind_data">15km/h</span></h2>
+          </div>
+          </div>
+         </div>
+
+    </div>
+     <div class="bottom-container">
+      
+          <div class="contact-me">
+            <img class="contact" src="images/contact.png" alt="contact image"> 
+            <h2>Get In Touch</h2>
+            <a class="btn" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdHHnLWBbJNZqqZnjNtxCGsVDGHzPgjXjkxjKbCHKkKzZlhRMSJKZxGXTbkLqPZGJJQMPQv" target="_blank">CONTACT ME</a>
+          </div>
+          <hr class="hr" size="3">
+          
+        </div>
+
+        <div class="last">
+           
+            <a class="footer-link" href="https://www.linkedin.com/in/adyasha-waghmare-b2b578183/" target="_blank">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/Adyasha26?tab=projects" target="_blank">GitHub</a>
+            <a class="footer-link" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdHHnLWBbJNZqqZnjNtxCGsVDGHzPgjXjkxjKbCHKkKzZlhRMSJKZxGXTbkLqPZGJJQMPQv" target="_blank">Email</a>
+            <p class="copyright">© Adyasha Waghmare.</p>
+          
+        
+        
+        </div>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script>
+      $('.details').click(function(){
+      $(this).closest('.details').toggleClass('animate');
+      $(this).css('transform,rotateY(180deg)');
+    
+    });
+
+     $('.Submit').click(function(){
+     $(this).closest('.middle-container').find('.details').toggleClass('animate');
+      });
+      </script>
+     <script src="js/script.js">checkWeather()
+      
+
+    </script>
+
+
+</body>
+</html>
